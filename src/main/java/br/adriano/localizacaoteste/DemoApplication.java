@@ -36,6 +36,14 @@ public class DemoApplication implements CommandLineRunner{
 		double longi3 = -44.255053;
 		Loja loja3 = new Loja(null, "Shopping da ilha", lat3, longi3);
 		
-		lojaRepository.saveAll(Arrays.asList(loja1, loja2, loja3));
+		double lat4 = -2.501196;
+		double longi4 = -44.228123;
+		Loja loja4 = new Loja(null, "Mateus Turuzinho", lat4, longi4);
+		
+		double lat5 = -2.512086;
+		double longi5 = -44.225087;
+		Loja loja5 = new Loja(null, "Mateus Super Turu", lat5, longi5);
+		
+		lojaRepository.saveAll(Arrays.asList(loja1, loja2, loja3, loja4, loja5));
 	}
 }
