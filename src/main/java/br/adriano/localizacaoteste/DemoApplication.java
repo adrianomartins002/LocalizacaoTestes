@@ -24,16 +24,16 @@ public class DemoApplication implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception {
 
-		double lat1 = -2.515776;
-		double long1 = -4.4245216;
+		double lat1 = -2.515749;
+		double long1 = -44.245237;
 		Loja loja1 = new Loja(null, "Cohama", lat1, long1);
 		
-		double lat2 = -2.517882;
-		double longi2 = -4.4257721;
+		double lat2 = -2.517986;
+		double longi2 = -44.257688;
 		Loja loja2 = new Loja(null, "Mix curva do 90", lat2, longi2);
 		
-		double lat3 = -2.527261;
-		double longi3 = -44.255085;
+		double lat3 = -2.527028;
+		double longi3 = -44.255053;
 		Loja loja3 = new Loja(null, "Shopping da ilha", lat3, longi3);
 		
 		lojaRepository.saveAll(Arrays.asList(loja1, loja2, loja3));
