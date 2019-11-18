@@ -32,7 +32,7 @@ public class LojaResource {
 	}
 	
 	@RequestMapping(value = {"latitude/{lati}/longitude/{longi}"}, method = RequestMethod.GET)
-	public ResponseEntity<?> findByLatitudeLongitude(@PathVariable Double lati, @PathVariable Double longi) {
+	public ResponseEntity<?> findByLatitudeLongitude(@PathVariable double lati, @PathVariable double longi) {
 		Loja obj = service.lojaMaisproxima(lati, longi);
 		return ResponseEntity.ok().body(obj);
 	}

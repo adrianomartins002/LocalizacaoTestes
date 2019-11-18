@@ -16,10 +16,10 @@ public class Loja implements Serializable {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	Integer id;
 	String  nome;
-	Double latitude;
-	Double longitude;
+	double latitude;
+	double longitude;
 	
-	public Loja(Integer id, String nome, Double latitude, Double longitude) {
+	public Loja(Integer id, String nome, double latitude, double longitude) {
 		super();
 		this.id = id;
 		this.nome = nome;
@@ -48,19 +48,19 @@ public class Loja implements Serializable {
 		this.nome = nome;
 	}
 
-	public Double getLatitude() {
+	public double getLatitude() {
 		return latitude;
 	}
 
-	public void setLatitude(Double latitude) {
+	public void setLatitude(double latitude) {
 		this.latitude = latitude;
 	}
 
-	public Double getLongitude() {
+	public double getLongitude() {
 		return longitude;
 	}
 
-	public void setLongitude(Double longitude) {
+	public void setLongitude(double longitude) {
 		this.longitude = longitude;
 	}
 
